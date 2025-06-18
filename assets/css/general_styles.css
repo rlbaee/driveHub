@@ -1,0 +1,121 @@
+/* Font imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Colors */
+:root {
+  --main: #ef946c;
+  --main-2: #d4cbe5;
+  --background: #ebf2fa;
+  --foreground: #1c3041;
+  --accent: #07a0c3;
+}
+
+html,
+body {
+  background-color: var(--background);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Tinos", sans-serif;
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 75%;
+  transition: all 0.3s ease;
+}
+
+main.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+a.blue-button {
+  background-color: var(--accent);
+  border-radius: 30px;
+  padding: 6px 40px;
+  border: 2px solid var(--foreground);
+  font-weight: 800;
+}
+
+a.transparent-button {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 30px;
+  padding: 6px 40px;
+  border: 2px solid var(--accent);
+  font-weight: 800;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav .logo a img {
+  width: 120px;
+}
+
+nav .links a:not(.blue-button) {
+  padding: 0 15px;
+}
+
+footer {
+  background-color: var(--foreground);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: flex-end;
+}
+
+footer * {
+  color: var(--background);
+}
+
+footer .right {
+  display: flex;
+  gap: 20px;
+}
+
+footer .right * > p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Media queries */
+@media (max-width: 1380px) {
+  .wrapper {
+    max-width: 90%;
+  }
+}

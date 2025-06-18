@@ -1,0 +1,27 @@
+.hero p {
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero-button-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  background-image: url(/assets/images/backgrounds/index.png);
+  background-size: cover;
+}
+
+main.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+main.hero > * {
+  z-index: 2;
+}
