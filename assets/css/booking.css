@@ -1,0 +1,154 @@
+/* Font imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Colors */
+:root {
+  --main: #ef946c;
+  --main-2: #d4cbe5;
+  --background: #ebf2fa;
+  --foreground: #1c3041;
+  --accent: #07a0c3;
+}
+html,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-wrapper {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px 40px;
+  gap: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.names {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.first-name,
+.last-name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-name input,
+.last-name input {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  margin-bottom: 15px;
+}
+
+.datetime {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.date,
+.time {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"] {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  margin-bottom: 15px;
+}
+
+.types {
+  display: flex;
+  flex-direction: column;
+}
+
+.type {
+  width: 100%;
+
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+  margin: 6px 0;
+}
+.login-wrapper p {
+  font-family: "Raleway", sans-serif;
+}
+
+.login-wrapper h2 {
+  margin-bottom: 0px;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--accent);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] a {
+  color: var(--background);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+textarea {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.car-model-container {
+  display: none;
+  margin-top: 10px;
+}
+
+#test-drive:checked ~ .car-model-container {
+  display: block;
+}

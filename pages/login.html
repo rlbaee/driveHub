@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/general_styles.css" />
-    <link rel="stylesheet" href="/assets/css/page.css" />
+    <link rel="stylesheet" href="/assets/css/login.css" />
     <link
       href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
       rel="stylesheet"
     />
     <title>DriveHub Login</title>
@@ -31,7 +35,35 @@
       </div>
     </header>
     <main>
-      <div class="wrapper"></div>
+      <div class="wrapper">
+        <div class="login-wrapper">
+          <h2>Войти</h2>
+          <p>Добро пожаловать обратно!</p>
+          <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <label for="password">Пароль</label>
+            <input type="password" id="password" />
+            <div class="inline">
+              <div class="checkbox">
+                <input type="checkbox" id="remember" />
+                <label for="remember">Запомнить меня</label>
+              </div>
+              <a class="forgot" href="/index.html">Забыли пароль?</a>
+            </div>
+            <button type="submit"><a href="/index.html">Войти</a></button>
+            <p>или войдите через</p>
+            <div class="logos">
+              <i class="bxl bx-google"></i>
+              <i class="bxl bx-facebook"></i>
+            </div>
+            <p>
+              Нет аккаунта?
+              <a href="/pages/registration.html">Зарегестрироватся</a>
+            </p>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="left">

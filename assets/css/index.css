@@ -1,12 +1,29 @@
+/* Font imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Colors */
+:root {
+  --main: #ef946c;
+  --main-2: #d4cbe5;
+  --background: #ebf2fa;
+  --foreground: #1c3041;
+  --accent: #07a0c3;
+}
+
 .hero p {
   font-weight: 600;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom: 20px;
 }
 
 .hero-button-wrapper {
   display: flex;
   gap: 20px;
+}
+
+h1 {
+  text-align: left;
 }
 
 main {

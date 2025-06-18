@@ -17,12 +17,13 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Tinos", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--foreground);
   text-decoration: none;
 }
@@ -33,16 +34,26 @@ h3,
 h4,
 h5,
 a {
-  font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
+p {
+  font-family: "Tinos", sans-serif;
+}
 h1 {
   font-size: 48px;
   font-weight: 900;
 }
 
+h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
 h3 {
   font-size: 18px;
+
+  text-align: left;
 }
 
 .wrapper {
@@ -105,6 +116,12 @@ footer * {
 footer .right {
   display: flex;
   gap: 20px;
+}
+footer .right * {
+  padding: 2px 0;
+}
+footer .left * {
+  padding: 2px 0;
 }
 
 footer .right * > p {

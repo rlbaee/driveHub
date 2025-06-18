@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/general_styles.css" />
-    <link rel="stylesheet" href="/assets/css/page.css" />
+    <link rel="stylesheet" href="/assets/css/registration.css" />
     <link
       href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
       rel="stylesheet"
     />
     <title>DriveHub Registration</title>
@@ -31,7 +35,44 @@
       </div>
     </header>
     <main>
-      <div class="wrapper"></div>
+      <div class="wrapper">
+        <div class="login-wrapper">
+          <h2>Регистрация</h2>
+          <p>Создайте новый аккаунт</p>
+          <form>
+            <div class="names">
+              <div class="first-name">
+                <label for="name">Имя</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="last-name">
+                <label for="last-name">Фамилия</label>
+                <input type="text" id="last-name" />
+              </div>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <label for="password">Пароль</label>
+            <input type="password" id="password" />
+            <label for="password-again">Подтвердите пароль</label>
+            <input type="password" id="password-again" />
+            <input type="checkbox" id="politics" />
+            <label for="politics"
+              >Я согласен с условиями использования и политикой
+              конфиденциальности</label
+            >
+            <button type="submit">
+              <a href="/index.html">Зарегестрироватся</a>
+            </button>
+            <p>или зарагестрируйтесь через</p>
+            <div class="logos">
+              <i class="bxl bx-google"></i>
+              <i class="bxl bx-facebook"></i>
+            </div>
+            <p>Уже есть аккаунт? <a href="/pages/login.html">Войти</a></p>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="left">

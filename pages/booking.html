@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/general_styles.css" />
-    <link rel="stylesheet" href="/assets/css/page.css" />
+    <link rel="stylesheet" href="/assets/css/booking.css" />
     <link
       href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
     <title>DriveHub Booking</title>
+    <style>
+      /* Add these styles inside your existing CSS */
+
+      .car-model-container {
+        display: none;
+        margin-top: 10px;
+      }
+
+      /* Show the car model input only when test-drive radio is checked */
+      #test-drive:checked ~ .car-model-container {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -31,7 +48,80 @@
       </div>
     </header>
     <main>
-      <div class="wrapper"></div>
+      <div class="wrapper">
+        <div class="login-wrapper">
+          <h2 style="text-align: left">Бронирование времени</h2>
+          <p style="text-align: left">
+            Выберите удобное время для посещения нашего автосалона
+          </p>
+          <form>
+            <div class="names">
+              <div class="first-name">
+                <label for="name">Имя</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="last-name">
+                <label for="last-name">Фамилия</label>
+                <input type="text" id="last-name" />
+              </div>
+            </div>
+            <label for="text">Телефон</label>
+            <input type="text" id="email" />
+            <div class="types">
+              <p style="text-align: left">Тип услуги</p>
+
+              <div class="type">
+                <input type="radio" id="consultation" name="serviceType" />
+                <label for="consultation">Консультация по покупке</label>
+              </div>
+
+              <div class="type">
+                <input type="radio" id="to" name="serviceType" />
+                <label for="to">Техническое обслуживание</label>
+              </div>
+
+              <div class="type">
+                <input type="radio" id="test-drive" name="serviceType" />
+                <label for="test-drive">Тест-драйв</label>
+
+                <div class="car-model-container">
+                  <label for="car-model">Модель автомобиля</label>
+                  <input
+                    type="text"
+                    id="car-model"
+                    name="car-model"
+                    placeholder="Введите модель автомобиля"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="datetime">
+              <div class="date">
+                <label for="date">Дата</label>
+                <input type="date" id="date" />
+              </div>
+              <div class="time">
+                <label for="time">Время</label>
+                <input type="time" id="time" />
+              </div>
+            </div>
+            <div class="info">
+              <label for="info">Дополнительная информация</label>
+              <textarea id="info"></textarea>
+            </div>
+
+            <button type="submit">
+              <a href="/index.html">Забронировать время</a>
+            </button>
+
+            <p style="font-size: 12px">
+              Нажимая кнопку, вы соглашаетесь с политикой обработки персональных
+              данных
+            </p>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="left">

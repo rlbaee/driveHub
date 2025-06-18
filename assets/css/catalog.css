@@ -1,0 +1,83 @@
+/* Font imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Colors */
+:root {
+  --main: #ef946c;
+  --main-2: #d4cbe5;
+  --background: #ebf2fa;
+  --foreground: #1c3041;
+  --accent: #07a0c3;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+  background-image: url(/assets/images/backgrounds/catalog.png);
+  margin: 40px 0;
+}
+
+.logos {
+  display: flex;
+
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+.logos a {
+  background-color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  min-width: 140px;
+  min-height: 50px;
+  flex: 1 1 140px;
+  border-radius: 10px;
+  border: 1px solid var(--foreground);
+}
+
+.logos a img {
+  max-height: 50px;
+  max-width: 100px;
+}
+
+.manufacturers {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.manufacturers h2 {
+  margin-top: 30px;
+}
+.manufacturer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.manufacturer .car {
+  flex: 1 1 200px;
+  border: 1px solid var(--foreground);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.manufacturer .car img {
+  width: 100%;
+}
+
+.manufacturer .car h3 {
+  font-size: 24px;
+}
+
+.manufacturer .car p {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--accent);
+}

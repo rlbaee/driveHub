@@ -1,6 +1,62 @@
+/* Font imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Colors */
+:root {
+  --main: #ef946c;
+  --main-2: #d4cbe5;
+  --background: #ebf2fa;
+  --foreground: #1c3041;
+  --accent: #07a0c3;
+}
+
 h1 {
   width: 100%;
   text-align: center;
   padding: 100px 0;
   background-image: url(/assets/images/backgrounds/services.png);
+  margin: 40px 0;
+}
+.intro {
+  margin-bottom: 20px;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.service {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.service .text {
+  width: 50%;
+}
+
+.service .text h3:after {
+  content: "";
+  display: block;
+  background-color: var(--accent);
+  width: 80%;
+  margin: 10px 0;
+  height: 4px;
+}
+
+.service img {
+  width: 50%;
+}
+
+.service:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
